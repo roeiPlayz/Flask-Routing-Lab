@@ -35,14 +35,20 @@
     <title>Nike Dunk Low Retro</title>
 </head>
 <body>
+  <input type=button onClick="location.href='cart'"
+ value='GO TO CART'>
+   <input type=button onClick="location.href='/'"
+ value='HOME'>
+  <input type=button onClick="location.href='product'"
+ value='PRODUCTS IN STOCK'>
 <h2 style="text-align:center">Nike SB Dunks</h2>
 
 <div class="card">
-  <img src="secondproduct.jpg" alt="Denim Jeans" style="width:100%">
+  <img src="static/secondproduct.jpg" alt="Denim Jeans" style="width:100%">
   <h1>Nike Dunk Low Retro</h1>
   <p class="price">$199.99</p>
   <p>Nike Dunk Low Retro White Black Panda (2021)</p>
-  <p><button href = "cart">Add to Cart</button></p>
+  <p><button href = "{{ url_for('cart') }}">Add to Cart</button></p>
 </div>
 	<!-- <h1>Jordan 1 Retro Low OG SP</h1>
     <h2>Travis Scott Reverse Mocha</h2>
